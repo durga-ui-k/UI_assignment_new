@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Product Listing</h1>
+        <input type="text" id="search-bar" placeholder="Search products...">
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><input type="checkbox" value="jewelery" id="category-jewelery"> Jewelery</li>
+                <li><input type="checkbox" value="electronics" id="category-electronics"> Electronics</li>
+                <li><input type="checkbox" value="men's clothing" id="category-mens-clothing"> Men's Clothing</li>
+                <li><input type="checkbox" value="women's clothing" id="category-womens-clothing"> Women's Clothing</li>
+            </ul>
+        </aside>
+
+        <section class="product-section">
+            <div class="filters">
+                <select id="sort-options">
+                    <option value="price-asc">Sort by Price: Low to High</option>
+                    <option value="price-desc">Sort by Price: High to Low</option>
+                </select>
+            </div>
+
+            <div id="product-list" class="product-list"></div>
+
+            <button id="load-more" class="load-more">Load More</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
